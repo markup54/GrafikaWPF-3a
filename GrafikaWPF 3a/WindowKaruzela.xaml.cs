@@ -62,5 +62,10 @@ namespace GrafikaWPF_3a
             obrazki[Licznik].LiczbaPolubien++;
             wyswietlObraz(Licznik);
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

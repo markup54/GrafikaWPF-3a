@@ -20,5 +20,28 @@
             Polubienia
         </TextBlock>
         <Button Click="Button_Click_2">Polub</Button>
+        <GroupBox Header="Wybór obrazu">
+            <StackPanel>
+                <RadioButton
+                    IsChecked="True"
+                    x:Name="obraz1Radio"
+                    GroupName="obrazkiRadio">
+                    rys1.jpg
+                </RadioButton>
+                <RadioButton
+                    x:Name="obraz2Radio"
+                    GroupName="obrazkiRadio">
+                    rys2.jpg
+                </RadioButton>
+                <RadioButton
+                    x:Name="obraz3Radio"
+                    GroupName="obrazkiRadio">
+                    rys3.jpg
+                </RadioButton>
+                <Button Click="Button_Click_3">
+                    Pokaz
+                </Button>
+            </StackPanel>
+        </GroupBox>
     </UniformGrid>
 </Window>
