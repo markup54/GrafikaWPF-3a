@@ -9,7 +9,9 @@
     <UniformGrid Rows="1">
         <Button Click="Button_Click">
             <Image Source="wstecz.jpg"></Image></Button>
-        <Image Source="rys1.jpg"/>
+        <Image 
+            x:Name="imageModyfikowany"
+            Source="rys1.jpg"/>
         <Button Click="Button_Click_1">
             <Image Source="dalej.jpg"></Image>
         </Button>

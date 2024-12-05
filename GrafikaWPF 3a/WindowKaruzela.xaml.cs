@@ -34,11 +34,25 @@ namespace GrafikaWPF_3a
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Licznik--;
+            if (Licznik < 0)
+            {
+                Licznik = obrazki.Count - 1;
+            }
+            wyswietlObraz(Licznik);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Licznik++;
+            if(Licznik == obrazki.Count)
+            {
+                Licznik = 0;
+            }
+            wyswietlObraz(Licznik);
+        }
+        private void wyswietlObraz(int i)
+        {
+            imageModyfikowany.Source = new BitmapImage(new Uri(obrazki[i],UriKind.Relative));
         }
     }
 }
