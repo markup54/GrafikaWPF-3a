@@ -21,14 +21,15 @@ namespace GrafikaWPF_3a
     public partial class WindowKaruzela : Window
     {
         public int Licznik { get; set; }
-        public List<string> obrazki = new List<string>();
+        public List<Obraz> obrazki = new List<Obraz>();
         public WindowKaruzela()
         {
             InitializeComponent();
-            obrazki.Add("rys1.jpg");
-            obrazki.Add("rys2.jpg");
-            obrazki.Add("rys3.jpg");
-            obrazki.Add("rys4.jpg");
+            obrazki.Add(new Obraz("rys1.jpg"));
+            obrazki.Add(new Obraz("rys2.jpg"));
+            obrazki.Add(new Obraz("rys3.jpg"));
+            obrazki.Add(new Obraz("rys4.jpg"));
+           
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -52,7 +53,7 @@ namespace GrafikaWPF_3a
         }
         private void wyswietlObraz(int i)
         {
-            imageModyfikowany.Source = new BitmapImage(new Uri(obrazki[i],UriKind.Relative));
+            imageModyfikowany.Source = new BitmapImage(new Uri(obrazki[i].UrlObrazka,UriKind.Relative));
         }
     }
 }
