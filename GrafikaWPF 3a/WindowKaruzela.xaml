@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:GrafikaWPF_3a"
         mc:Ignorable="d"
         Title="WindowKaruzela" Height="450" Width="800">
-    <UniformGrid Rows="1">
+    <UniformGrid Rows="2">
         <Button Click="Button_Click">
             <Image Source="wstecz.jpg"></Image></Button>
         <Image 
@@ -15,5 +15,10 @@
         <Button Click="Button_Click_1">
             <Image Source="dalej.jpg"></Image>
         </Button>
+        <TextBlock 
+            x:Name="polubieniaTextBlock">
+            Polubienia
+        </TextBlock>
+        <Button Click="Button_Click_2">Polub</Button>
     </UniformGrid>
 </Window>

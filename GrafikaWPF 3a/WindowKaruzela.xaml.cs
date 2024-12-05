@@ -54,6 +54,13 @@ namespace GrafikaWPF_3a
         private void wyswietlObraz(int i)
         {
             imageModyfikowany.Source = new BitmapImage(new Uri(obrazki[i].UrlObrazka,UriKind.Relative));
+            polubieniaTextBlock.Text = obrazki[i].LiczbaPolubien.ToString();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            obrazki[Licznik].LiczbaPolubien++;
+            wyswietlObraz(Licznik);
         }
     }
 }
